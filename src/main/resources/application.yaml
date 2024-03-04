@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost/board2023
+    username: root
+    password: green502
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true # sql을 보기 좋게 출력
+        show_sql: true # 콘솔창에 sql이 보이게 함
+    open-in-view: false # default : true인데 false로 바꾸는게 불문율
+    generate-ddl: true #ddl을 자동으로 생성하지 않음
+
+file:
+  dir: /home/download/
+
+springdoc:
+  swagger-ui:
+    path: /swagger.html
